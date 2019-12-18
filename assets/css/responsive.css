@@ -1,0 +1,217 @@
+@media (max-width: 999px) {
+    /* FEATURED  */
+    .getUpLine {
+        margin-top: 0rem;
+    }
+    .getUpLineTwo {
+        margin-top: -2rem;
+    }
+    .getUpLineTwo .margin_2_top {
+        margin-top: 1rem !important;
+    }
+    .getUpLineThree {
+        margin-top: -0rem;
+    }
+    /* CONTATO */
+    textarea {
+        margin-top: 1rem !important
+    }
+    /* FOOTER */
+    footer .row>div {
+        margin-bottom: 2rem;
+        padding: 0px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .containerEighteen {
+        width: 90% !important;
+        margin: 0 auto !important
+    }
+    /* PAGE CONTATO */
+    .contact-infos .row {
+        flex-flow: column;
+    }
+    .contact-infos .row > div:first-child {
+        padding: 0px !important
+    }
+}
+
+.menumobile {
+    position: relative;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    height: 80px;
+}
+
+.menumobile_logo img {
+    width: 40%;
+    max-width: 180px !important;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.menumobile_toogle {
+    color: #f15a2b;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5%;
+    cursor: pointer;
+    height: 80px;
+}
+
+.menumobile_toogle>i {
+    font-size: 2.5rem
+}
+
+.pushmenu {
+    /*this is the nav*/
+    background: #f15a2b;
+    font-family: Montserrat;
+    width: 240px;
+    color: white;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    overflow-y: auto
+}
+
+.pushmenu-logo img {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.pushmenu a {
+    display: block;
+    /* drops the nav vertically*/
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+    padding: 14px;
+}
+
+.pushmenu a:hover {
+    background: #00A287;
+    color: white
+}
+
+.pushmenu a:active {
+    background: #454f5c;
+    color: #fff;
+}
+
+.pushmenu-right {
+    right: -240px;
+}
+
+.pushmenu-right.pushmenu-open {
+    right: 0;
+}
+
+.pushmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+}
+
+.pushmenu-push-toleft {
+    right: 240px;
+}
+
+/*Transition*/
+
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.footer-montebelo-mobile {
+    width: 100px;
+    max-width: 80% !important;
+}
+
+@media (max-width: 580px) {
+    /* FIXED BAR */
+    .fixed-navbar {
+        background-image: linear-gradient(104deg, #f15a2b 66.5%, #701412 66.6%)!important;
+    }
+    .fixed-navbar img {
+        height: 25px;
+        margin-right: 5px;
+    }
+    .fixed-text {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+    .fixed-navbar>div {
+        height: 40px;
+        justify-content: space-around;
+    }
+    /* SECTIONS */
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .section-title::before {
+        content: ' ';
+        width: 30px;
+        height: 30px;
+    }
+    /* ABOUT */
+    .about-slide {
+        padding: 0 2rem;
+    }
+    .about-slide>.row {
+        display: flex;
+        flex-flow: column;
+    }
+    .about-slide .row>div:first-child {
+        order: 2
+    }
+    .swiper-button-next {
+        right: -0.5rem !important;
+    }
+    .swiper-button-prev {
+        left: -0.5rem !important;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 25px !important
+    }
+    /* FEATURED */
+    .featured img {
+        width: 180px !important;
+    }
+    .imgLeft {
+        margin-left: -80px;
+    }
+    .feat-img-one {
+        margin-top: 0px !important;
+    }
+    h3.featured-title {
+        margin-top: 0px !important;
+    }
+    .getUpLine, .getUpLineTwo, .getUpLineThree, .featured .row.margin_2_top {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    /* PAGE CONTATO */
+    .banner-contato {
+        background-size: cover
+    }
+    .contact h4 {
+        font-size: 22px
+    }
+    .contact-form {
+        padding: 0 2rem;
+    }
+}
