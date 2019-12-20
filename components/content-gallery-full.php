@@ -155,5 +155,5 @@
             </div>
         </div>
     </div>
-    <div class="galeria-paginacao"></div>
+    <ul class="galeria-paginacao"></ul>
 </div>

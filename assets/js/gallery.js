@@ -51,17 +51,17 @@ function geraGallery() {
     $("#show_per_page").val(show_per_page);
 
     if ($('#current_page').val() != '0') {
-        navigation_html = '<a class="prev-page" onclick="previous()">Prev</a>';
+        navigation_html = '<li class="waves-effect"><a class="prev-page" onclick="previous()">Prev</a></li>';
     } else {
         navigation_html = '';
     }
     var current_link = 0;
 
     while (number_of_pages > current_link) {
-        navigation_html += '<a class="page" onclick="go_to_page(' + current_link + ')" longdesc="' + current_link + '">' + (current_link + 1) + '</a>';
+        navigation_html += '<li class="waves-effect"><a class="page" onclick="go_to_page(' + current_link + ')" longdesc="' + current_link + '">' + (current_link + 1) + '</a></li>';
         current_link++;
     }
-    navigation_html += '<a class="next-page" onclick="next()">Next</a>';
+    navigation_html += '<li class="waves-effect"><a class="next-page" onclick="next()">Next</a></li>';
 
     $('.controls-page').html(navigation_html)
     $('.controls-page .page:first').addClass('active');
@@ -80,18 +80,18 @@ function go_to_page(page_rum) {
         $('.controls-page').html(navigation_html)
         notFirst = true
     } else if (page_rum == 0) {
-        navigation_html = navigation_html.replace(`<a class="prev-page" onclick="previous()">Prev</a>`, '');
+        navigation_html = navigation_html.replace(`<li class="waves-effect"><a class="prev-page" onclick="previous()">Prev</a></li>`, '');
         $('.controls-page').html(navigation_html);
         notFirst = false
 
     }
 
     if ((page_rum + 1) == number_of_pages) {
-        navigation_html = navigation_html.replace(`<a class="next-page" onclick="next()">Next</a>`, '');
+        navigation_html = navigation_html.replace(`<li class="waves-effect"><a class="next-page" onclick="next()">Next</a></li>`, '');
         $('.controls-page').html(navigation_html);
         notLast = false;
     } else if (notLast == false) {
-        $('.controls-page').append('<a class="next-page" onclick="next()">Next</a>');
+        $('.controls-page').append('<li class="waves-effect"><a class="next-page" onclick="next()">Next</a></a>');
         notLast = true;
     }
     
